@@ -10,7 +10,7 @@
 
   window.APP_CONFIG = {
     API_BASE_URL: isLocalhost
-      ? "http://localhost:8080/api"
-      : "https://YOUR-GATEWAY-URL.onrender.com/api"
+      ? "https://api-gateway-366n.onrender.com/api"
+      : "https://api-gateway-366n.onrender.com/api"
   };
 })();
