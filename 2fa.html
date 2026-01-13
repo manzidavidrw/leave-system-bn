@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Two-Factor Authentication</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+  <div class="auth-container">
+    <div class="auth-card">
+
+      <!-- Logo / App name -->
+      <div class="auth-header">
+        <img src="img/logo.png" alt="App Logo" class="auth-logo">
+        <h2>Two-Factor Authentication</h2>
+        <p>Enter the 6-digit code from your authenticator app</p>
+      </div>
+
+      <!-- 2FA Form -->
+      <form id="twoFactorForm" class="auth-form">
+        <input type="text" id="twoFactorCode" class="otp-input" placeholder="••••••" maxlength="6" inputmode="numeric"
+          autocomplete="one-time-code" required />
+
+        <button type="submit" class="btn-primary">
+          Verify Code
+        </button>
+      </form>
+
+      <!-- Error -->
+      <div id="errorMessage" class="error-message"></div>
+
+      <!-- Footer -->
+      <div class="auth-footer">
+        <button class="link-btn" onclick="window.location.href='index.html'">
+          ← Back to login
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <script src="config.js"></script>
+  <script src="js/2fa.js"></script>
+</body>
+
+</html>

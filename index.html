@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Management Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+
+  <!-- Google Sign-In meta tag -->
+  <meta name="google-signin-client_id"
+    content="942445069593-klgnvnpf8d0cnf2nqt3f6uqdedbkbfrn.apps.googleusercontent.com">
+</head>
+
+<body>
+  <div class="card">
+    <img src="img/logo.png" alt="Logo" width="80">
+    <h1>Leave Management Portal</h1>
+
+    <form id="loginForm">
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+
+      <label>
+        <input type="checkbox" name="remember"> Remember Me
+      </label>
+
+      <button type="submit" class="primary">Login</button>
+    </form>
+
+    <div class="alternative">-- or login with --</div>
+    <div class="social-buttons">
+      <button id="googleLogin" class="social">Google</button>
+    </div>
+
+    <div class="links">
+      <a href="#">Forgot password?</a>
+      <a href="#">Contact Support</a>
+    </div>
+  </div>
+
+  <!-- Google Platform Library -->
+  <script src="https://apis.google.com/js/platform.js" async defer onload="initGoogleAuth()"></script>
+
+  <script>
+    function initGoogleAuth() {
+      gapi.load('auth2', function () {
+        gapi.auth2.init({
+          client_id: '942445069593-klgnvnpf8d0cnf2nqt3f6uqdedbkbfrn.apps.googleusercontent.com'
+        });
+      });
+    }
+  </script>
+
+
+  <script src="config.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

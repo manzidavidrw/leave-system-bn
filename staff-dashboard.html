@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Dashboard - Leave Management</title>
+  <link rel="stylesheet" href="css/staff-dashboard.css">
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <h1>Leave Management System</h1>
+      <div class="header-right">
+        <span id="welcome"></span>
+        <button id="logoutBtn" class="btn-logout">Logout</button>
+      </div>
+    </header>
+
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <nav>
+          <ul>
+            <li data-section="applyLeave" class="active">Apply Leave</li>
+            <li data-section="myLeaves">My Leaves</li>
+            <li data-section="leaveBalance">Leave Balance</li>
+            <li data-section="peopleOnLeave">People on Leave</li>
+            <li data-section="settings">Settings</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <div id="dashboardContent">
+          <!-- Dynamic content loads here -->
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div id="notification" class="notification"></div>
+  <script src="config.js"></script>
+  <script src="js/staff-dashboard.js"></script>
+</body>
+
+</html>

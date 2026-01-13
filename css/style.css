@@ -1,0 +1,74 @@
+/* Reset & Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4A90E2, #50E3C2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Common Card */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    padding: 40px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s;
+}
+
+button.primary {
+    background-color: #4A90E2;
+    color: white;
+    padding: 12px;
+    width: 100%;
+}
+
+button.primary:hover {
+    background-color: #357ABD;
+}
+
+button.social {
+    flex: 1;
+    background-color: #eee;
+    color: #333;
+    padding: 12px;
+    margin: 0 5px;
+}
+
+button.social:hover {
+    background-color: #ddd;
+}
+
+/* Links */
+a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .card {
+        padding: 30px 20px;
+    }
+}

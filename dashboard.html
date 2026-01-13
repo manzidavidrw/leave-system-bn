@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Admin Panel</h2>
+      <nav>
+        <ul>
+          <li data-section="reviewLeaves" class="active">Review Leaves</li>
+          <li data-section="registerUsers">Register Users</li>
+          <li data-section="leaveReports">Leave Reports</li>
+          <li data-section="peopleOnLeave">People on Leave</li>
+          <li data-section="viewUsers">View Users</li>
+
+        </ul>
+      </nav>
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <header>
+        <h1 id="welcome">Welcome, Admin</h1>
+      </header>
+      <div id="dashboardContent">
+        <!-- Dynamic content will appear here -->
+      </div>
+    </main>
+  </div>
+
+  <div id="notification" class="notification"></div>
+  <script src="config.js"></script>
+
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>
